@@ -1,1 +1,90 @@
-<html><body><h1>App Support Page</h1></body></html>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>藤田優作 | アプリ</title>
+  <meta name="description" content="藤田優作が開発・公開しているiOSアプリの一覧です。">
+  <style>
+    :root {
+      --bg: #f6f5f1;
+      --card: #ffffff;
+      --text: #1f2933;
+      --sub: #5f6b76;
+      --line: #e3e0d8;
+      --accent: #1f3a5f;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #14181d;
+        --card: #1c222a;
+        --text: #eceff2;
+        --sub: #a3adb8;
+        --line: #2b333d;
+        --accent: #8fb3e6;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      line-height: 1.7;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 20px 32px; }
+    h1 { font-size: 1.6rem; margin: 0 0 4px; }
+    .lead { color: var(--sub); margin: 0 0 32px; }
+    h2 { font-size: 1.05rem; margin: 0 0 12px; color: var(--sub); font-weight: 600; }
+    .apps { display: grid; gap: 14px; }
+    .app {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 18px 20px;
+    }
+    .app h3 { margin: 0 0 4px; font-size: 1.1rem; }
+    .app p { margin: 0 0 12px; color: var(--sub); font-size: 0.95rem; }
+    .links a {
+      display: inline-block;
+      margin-right: 16px;
+      color: var(--accent);
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .links a:hover { text-decoration: underline; }
+    footer {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px 48px;
+      color: var(--sub);
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>藤田優作のアプリ</h1>
+    <p class="lead">開発・公開しているiOSアプリの一覧です。</p>
+
+    <h2>アプリ</h2>
+    <div class="apps">
+      <!-- アプリを追加するときは、この .app のブロックをコピーして書き換える -->
+      <section class="app">
+        <h3>戦国時代クイズ - 武将と日本史を楽しく学ぶアプリ</h3>
+        <p>戦国時代の武将や合戦について、4択クイズで楽しく学べるアプリです。</p>
+        <div class="links">
+          <a href="https://apps.apple.com/jp/app/id6756393972">App Storeで見る</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://marozaemon1217.wixsite.com/mysite-1">プライバシーポリシー</a>
+    <p>&copy; 藤田優作</p>
+  </footer>
+</body>
+</html>
